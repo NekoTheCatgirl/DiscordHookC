@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.2)
+cmake_minimum_required(VERSION 3.30)
 project(DiscordHookC
         VERSION 1.0.0.0
         DESCRIPTION "A C library for Discord Webhooks"
