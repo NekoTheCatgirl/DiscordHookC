@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
 [![Version](https://img.shields.io/badge/Version-1.0.0.0-blue.svg)](#)
+[![CMake on a single platform](https://github.com/NekoTheCatgirl/DiscordHookC/actions/workflows/cmake-single-platform.yml/badge.svg)](https://github.com/NekoTheCatgirl/DiscordHookC/actions/workflows/cmake-single-platform.yml)
 
 A modern, lightweight C library for sending and managing Discord Webhooks with ease. Supporting everything from simple text messages to complex multi-embed payloads.
 
