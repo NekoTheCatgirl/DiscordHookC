@@ -1,0 +1,23 @@
+# Build directories
+cmake-build-*/
+build/
+bin/
+obj/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation output
+doc/html/
+doc/latex/
+doc/CMakeFiles/
+
+# Environment variables
+.env
