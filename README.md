@@ -148,11 +148,15 @@ int main() {
     set_embed_title(embed, "System Status");
     set_embed_description(embed, "All systems are operational.");
     set_embed_color(embed, GREEN); // Using constants from color.h
-    
+
+    // If these fail, you are generally responsible for freeing the memory allocated for the strings, however in this example they are const char* so no free needed.
     try_add_embed_field(embed, "CPU Usage", "15%", true);
     try_add_embed_field(embed, "Memory", "2.4GB / 16GB", true);
     
-    try_add_webhook_embed(data, embed);
+    if (!try_add_webhook_embed(data, embed)) {
+        // If the adding of a embed fails, you still own the embed, and are responsible for destroying it.
+        embed_destroy(embed);
+    }
     
     send_webhook("YOUR_WEBHOOK_URL", data);
     webhook_destroy(data); // Also destroys the attached embed
